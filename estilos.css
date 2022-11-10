@@ -13,7 +13,11 @@ body {
 .startup {
 	position: absolute;
 	font-family: sans-serif;
-	padding: 10% 20px;
+	padding: 20% 35px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .title,
@@ -24,7 +28,7 @@ body {
 .title {
 	font-family: 'Quicksand', sans-serif;
 	color: #1e0b0f;
-	animation-delay: 1s;
+	animation-delay: 2s;
 }
 
 .subtitle {
@@ -49,10 +53,10 @@ body {
 	align-items: center;
 	height: 100vh;
 	overflow: hidden;
-	background-image: url(./img/fondo.png);
+	background-image: url(img/fondo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	animation-delay: 14s;
+	animation-delay: 20s;
 }
 
 .contenedor {
@@ -81,7 +85,7 @@ body {
 .anim-typewriter{
   animation: typewriter 4s steps(15) 1s 1 normal both,
              blinkTextCursor 500ms steps(15) infinite normal;
-	animation-delay: 8s; 
+	animation-delay: 12s; 
 }
 
 @keyframes typewriter{
@@ -182,8 +186,8 @@ figure .trasera p {
 	position: absolute;
 	font-family: sans-serif;
 	bottom: 0;
-	left: calc(50% - 70px);
 	color: #a7a2a2;
+	margin: 20px 0;
 }
 
 @media screen and (min-width: 765px) { 
@@ -219,5 +223,8 @@ figure .trasera p {
 		height: 100vh;
 		top: -40px;
 	}
-}
 
+	.name {
+		margin: 0;
+	}
+}
